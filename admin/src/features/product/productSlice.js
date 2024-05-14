@@ -15,9 +15,9 @@ export const updateProduct = createAsyncThunk(
 
 export const getaProduct = createAsyncThunk(
   "products/getaproduct",
-  async (productId, thunkAPI) => {
+  async (id, thunkAPI) => {
     try {
-      return await productService.getaProduct(productId);
+      return await productService.getaProduct(id);
     } catch (error) {
       return thunkAPI.rejectWithValue(error)
     }

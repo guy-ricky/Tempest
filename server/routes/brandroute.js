@@ -1,6 +1,6 @@
 const express = require('express')
 const {createBrand, updateBrand, deleteBrand, getBrand, getallBrand} = require('../controllers/brandCtrl');
-const {authMiddleware, isAdmin} = require('../middlewares/authmiddleware')
+const {authMiddleware, isAdmin} = require('../middlewares/authMiddleware')
 const router =express.Router();
 
 router.post('/', authMiddleware, isAdmin, createBrand);

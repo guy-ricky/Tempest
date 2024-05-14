@@ -1,6 +1,6 @@
 const express = require('express');
 const {createUser, loginUser, getallUsers, getaUser, delaUser, updateUser, blockUser, unblockUser, handleRefreshToken, logout, updatePassword, forgotPasswordToken, resetPassword, adminlogin, getWishList, saveAddress, userCart, getUserCart, emptyCart, createOrder, getOrders, updateOrderStatus, getAllOrders, getOrderByUserId} = require('../controllers/userCtrl')
-const {authMiddleware, isAdmin} = require('../middlewares/authmiddleware')
+const {authMiddleware, isAdmin} = require('../middlewares/authMiddleware')
 const router = express.Router();
 
 

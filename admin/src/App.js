@@ -13,7 +13,6 @@ import Addproduct from './pages/Addproduct'
 import CategoryList from './pages/CategoryList'
 import Category from './pages/Category'
 import Edit from './pages/Edit'
-import Update from './pages/Update'
 
 
 

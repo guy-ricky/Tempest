@@ -8,9 +8,9 @@ const getProducts = async () => {
   return response.data;
 };
 
-const getaProduct = async (productId) => {
+const getaProduct = async (id) => {
   const response = await axios.get(
-    `${base_url}products/${productId}/`
+    `${base_url}products/${id}`
   );
   return response.data;
 };

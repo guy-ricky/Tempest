@@ -13,14 +13,13 @@ const Products = () => {
 
   useEffect(() => {
     dispatch(getProducts());
-  });
+  },[]);
 
 
   return (
     <Container className='mt-16 md:mt-2 items-center mx-auto my-8 bg-slate-100'>
       <Grid container spacing={3}>
-      `console.log(products)`
-        {products.map((product, index) => (
+        {products?.map((product, index) => (
           <Grid key={product._id} xs={12} sm={4}>
             <Card className="flex flex-col p-6 space-y-10 bg-white rounded-3xl shadow-2xl md:space-y-0 md:space-xl-10 md:m-0 md:p-8" elevation={24}>
               {product.images.length > 0 && (

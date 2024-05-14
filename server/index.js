@@ -9,7 +9,6 @@ const productRouter = require("./routes/productroute");
 const categoryRouter = require("./routes/categoryroute")
 const brandRouter = require('./routes/brandroute')
 const mpesaRouter = require('./routes/token')
-const uploadRouter = require('./routes/uploadroute')
 const bodyParser = require('body-parser');
 const { errorHandler,notFound } = require('./middlewares/errorhandling');
 const cookieParser = require('cookie-parser');
@@ -28,8 +27,7 @@ app.use('/api/user', authRouter);
 app.use('/api/products', productRouter);
 app.use('/api/category', categoryRouter);
 app.use('/api/brand', brandRouter);
-app.use('/api/mpesa', mpesaRouter)
-app.use('/api/upload', uploadRouter)
+app.use('/api/mpesa', mpesaRouter);
 
 app.use(notFound)
 app.use(errorHandler)
