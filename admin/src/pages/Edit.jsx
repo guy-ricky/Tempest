@@ -28,9 +28,11 @@ const Edit = () => {
                 <div className="p-2 flex flex-col gap-3 items-center text-sm">
                 {product && (
             <>
-              <h2>{product.title}</h2>
-              <h2>{product.price}</h2>
-             
+              <h2 className='"block w-64 border-solid border-2 border-gray-400 p-1 rounded-lg"'>{product.title}</h2>
+              <h2 className="block w-64 border-solid border-2 border-gray-400 p-1 rounded-lg">{product.category}</h2>
+              <h2 className="block w-64 border-solid border-2 border-gray-400 p-1 rounded-lg">{product.description}</h2>
+              <h2 className="block w-64 border-solid border-2 border-gray-400 p-1 rounded-lg">{product.totalrating}</h2>
+              <h2 className="block w-64 border-solid border-2 border-gray-400 p-1 rounded-lg">{product.price}</h2>
             </>
           )}
 
